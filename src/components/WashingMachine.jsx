@@ -5,6 +5,7 @@ import "../componentsCss/WashingMachine.css";
 // fixed imports from carousel
 import BookNowForm from './AssestComponents/BookNowForm';
 import TroubleshootModal from './AssestComponents/TroubleshootModal';
+import EnquiryModuleCommon from './EnquiryModuleCommon';
 
 // image sources
 import wone from "../componentsSrcAssets/wone.jpg";
@@ -35,6 +36,7 @@ function WashingMachine() {
   };
 
   return (
+    <>
     <div className="wm-container">
       {/* Carousel */}
       <Carousel className="wm-carousel">
@@ -46,8 +48,8 @@ function WashingMachine() {
           />
           <div className="wm-carousel-item-content">
             <h3>Slide 1 - Washing Machine Repair</h3>
-            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-            <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+            {/* <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
           </div>
         </Carousel.Item>
         <Carousel.Item>
@@ -58,8 +60,8 @@ function WashingMachine() {
           />
           <div className="wm-carousel-item-content">
             <h3>Slide 2 - Washing Machine Setup</h3>
-            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-            <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+            {/* <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
           </div>
         </Carousel.Item>
         <Carousel.Item>
@@ -70,8 +72,8 @@ function WashingMachine() {
           />
           <div className="wm-carousel-item-content">
             <h3>Slide 3 - Washing Machine Maintenance</h3>
-            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-            <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+            <Button variant="primary" className="wm-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+            {/* <Button variant="secondary" className="wm-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
           </div>
         </Carousel.Item>
       </Carousel>
@@ -124,6 +126,8 @@ function WashingMachine() {
       {showBookNowModal && <BookNowForm onClose={closeBookNowModal} />}
       {showTroubleshootModal && <TroubleshootModal onClose={closeTroubleshootModal} />}
     </div>
+    <EnquiryModuleCommon/>
+    </>
   );
 }
 

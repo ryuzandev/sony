@@ -5,6 +5,7 @@ import "../componentsCss/AirConditioner.css";
 // Fixed imports for modal functionality
 import BookNowForm from './AssestComponents/BookNowForm';
 import TroubleshootModal from './AssestComponents/TroubleshootModal';
+import EnquiryModal from './AssestComponents/EnquiryModal';
 
 // image sources
 import aone from "../componentsSrcAssets/aone.jpg";
@@ -13,6 +14,7 @@ import athree from "../componentsSrcAssets/athree.jpg";
 import afour from "../componentsSrcAssets/afour.jpg";
 import afive from "../componentsSrcAssets/afive.jpg";
 import asix from "../componentsSrcAssets/asix.jpg";
+import EnquiryModuleCommon from './EnquiryModuleCommon';
 
 function AirConditioner() {
   // States to handle modal visibility
@@ -26,6 +28,7 @@ function AirConditioner() {
   const closeTroubleshootModal = () => setShowTroubleshootModal(false);
 
   return (
+    <>
     <div className="ac-component-container">
       {/* Carousel */}
       <Carousel>
@@ -34,8 +37,8 @@ function AirConditioner() {
       <img src={aone} alt="Air Conditioner Repair" className="ac-carousel-img" />
       <div className="ac-carousel-caption">
         <h3>Air Conditioner Repair</h3>
-        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-        <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+        {/* <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
       </div>
     </div>
   </Carousel.Item>
@@ -44,8 +47,8 @@ function AirConditioner() {
       <img src={atwo} alt="AC Installation" className="ac-carousel-img" />
       <div className="ac-carousel-caption">
         <h3>AC Installation</h3>
-        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-        <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+        {/* <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
       </div>
     </div>
   </Carousel.Item>
@@ -54,8 +57,8 @@ function AirConditioner() {
       <img src={athree} alt="AC Maintenance" className="ac-carousel-img" />
       <div className="ac-carousel-caption">
         <h3>AC Maintenance</h3>
-        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-        <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+        <Button variant="primary" className="ac-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+        {/* <Button variant="secondary" className="ac-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
       </div>
     </div>
   </Carousel.Item>
@@ -109,6 +112,8 @@ function AirConditioner() {
       {showBookNowModal && <BookNowForm onClose={closeBookNowModal} />}
       {showTroubleshootModal && <TroubleshootModal onClose={closeTroubleshootModal} />}
     </div>
+    <EnquiryModuleCommon/>
+    </>
   );
 }
 

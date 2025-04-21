@@ -232,7 +232,7 @@ function GridMultiService() {
                 alt="Air Conditioner"
                 className="service-image"
               />
-              <h5>Refridgerator</h5>
+              <h5>Refrigerator</h5>
               <p>
                 Our technicians are skilled in repairing air conditioners of all
                 makes and models for better cooling performance.

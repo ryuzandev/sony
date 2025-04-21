@@ -51,14 +51,14 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Book Now
+                Specimen
               </button>
-              <button
+              {/* <button
                 className="skew-button troubleshoot"
                 onClick={handleTroubleshootClick}
               >
                 Troubleshoot
-              </button>
+              </button> */}
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -83,14 +83,14 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Book Now
+                Specimen
               </button>
-              <button
+              {/* <button
                 className="skew-button troubleshoot"
                 onClick={handleTroubleshootClick}
               >
                 Troubleshoot
-              </button>
+              </button> */}
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -116,14 +116,14 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Book Now
+                Specimen
               </button>
-              <button
+              {/* <button
                 className="skew-button troubleshoot"
                 onClick={handleTroubleshootClick}
               >
                 Troubleshoot
-              </button>
+              </button> */}
             </div>
           </Carousel.Caption>
         </Carousel.Item>

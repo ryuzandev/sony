@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel, Button, Row, Col, Container } from 'react-bootstrap';
 import "../componentsCss/DishWasher.css";
+import EnquiryModuleCommon from './EnquiryModuleCommon';
 
 // Fixed imports for modal functionality
 import BookNowForm from './AssestComponents/BookNowForm';
@@ -26,6 +27,7 @@ function DishWasher() {
   const closeTroubleshootModal = () => setShowTroubleshootModal(false);
 
   return (
+    <>
     <div className="dw-component-container">
       {/* Carousel */}
       <Carousel>
@@ -34,8 +36,8 @@ function DishWasher() {
             <img src={done} alt="Dishwasher Repair" className="dw-carousel-img" />
             <div className="dw-carousel-caption">
               <h3>Dishwasher Repair</h3>
-              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-              <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+              {/* <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -44,8 +46,8 @@ function DishWasher() {
             <img src={dtwo} alt="Dishwasher Installation" className="dw-carousel-img" />
             <div className="dw-carousel-caption">
               <h3>Dishwasher Installation</h3>
-              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-              <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+              {/* <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -54,8 +56,8 @@ function DishWasher() {
             <img src={dthree} alt="Dishwasher Maintenance" className="dw-carousel-img" />
             <div className="dw-carousel-caption">
               <h3>Dishwasher Maintenance</h3>
-              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Book Now</Button>
-              <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+              <Button variant="primary" className="dw-carousel-btn primary" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+              {/* <Button variant="secondary" className="dw-carousel-btn secondary" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -107,6 +109,8 @@ function DishWasher() {
       {showBookNowModal && <BookNowForm onClose={closeBookNowModal} />}
       {showTroubleshootModal && <TroubleshootModal onClose={closeTroubleshootModal} />}
     </div>
+    <EnquiryModuleCommon/>
+    </>
   );
 }
 

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Carousel, Button, Row, Col, Container } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Carousel, Button, Row, Col, Container } from "react-bootstrap";
 import "../componentsCss/TvComponent.css";
 
 // fixed imports for modal functionality
-import BookNowForm from './AssestComponents/BookNowForm';
-import TroubleshootModal from './AssestComponents/TroubleshootModal';
+import BookNowForm from "./AssestComponents/BookNowForm";
+import TroubleshootModal from "./AssestComponents/TroubleshootModal";
+import EnquiryModuleCommon from "./EnquiryModuleCommon";
 
 // image sources
 import tvone from "../componentsSrcAssets/tvone.jpg";
@@ -35,24 +36,33 @@ function TvComponent() {
   };
 
   return (
+    <>
     <div className="tv-component-wrapper">
       {/* Carousel */}
       <Carousel>
         <Carousel.Item>
           <div className="tv-carousel-item-content">
             <img
-              src={tvsix}
+              src={tvone}
               alt="Television Repair"
               className="tv-carousel-image"
             />
             <div className="tv-carousel-caption">
               <h3>Slide 1 - Television Repair</h3>
-              <Button variant="primary" className="tv-carousel-btn" onClick={handleBookNowClick}>
-                Book Now
+              <Button
+                variant="primary"
+                className="tv-carousel-btn"
+                onClick={handleBookNowClick}
+              >
+                Complaint-Specimen
               </Button>
-              <Button variant="secondary" className="tv-carousel-btn" onClick={handleTroubleshootClick}>
+              {/* <Button
+                variant="secondary"
+                className="tv-carousel-btn"
+                onClick={handleTroubleshootClick}
+              >
                 Troubleshoot
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -65,12 +75,20 @@ function TvComponent() {
             />
             <div className="tv-carousel-caption">
               <h3>Slide 2 - TV Setup Service</h3>
-              <Button variant="primary" className="tv-carousel-btn" onClick={handleBookNowClick}>
-                Book Now
+              <Button
+                variant="primary"
+                className="tv-carousel-btn"
+                onClick={handleBookNowClick}
+              >
+                Complaint-Specimen
               </Button>
-              <Button variant="secondary" className="tv-carousel-btn" onClick={handleTroubleshootClick}>
+              {/* <Button
+                variant="secondary"
+                className="tv-carousel-btn"
+                onClick={handleTroubleshootClick}
+              >
                 Troubleshoot
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -83,12 +101,20 @@ function TvComponent() {
             />
             <div className="tv-carousel-caption">
               <h3>Slide 3 - TV Calibration</h3>
-              <Button variant="primary" className="tv-carousel-btn" onClick={handleBookNowClick}>
-                Book Now
+              <Button
+                variant="primary"
+                className="tv-carousel-btn"
+                onClick={handleBookNowClick}
+              >
+                Complaint-Specimen
               </Button>
-              <Button variant="secondary" className="tv-carousel-btn" onClick={handleTroubleshootClick}>
+              {/* <Button
+                variant="secondary"
+                className="tv-carousel-btn"
+                onClick={handleTroubleshootClick}
+              >
                 Troubleshoot
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Carousel.Item>
@@ -103,8 +129,8 @@ function TvComponent() {
           <Col md={6} className="tv-grid-description">
             <h4>TV Repair Service</h4>
             <p>
-              Our expert technicians are ready to fix your television, whether it's screen issues,
-              sound problems, or other technical failures.
+              Our expert technicians are ready to fix your television, whether
+              it's screen issues, sound problems, or other technical failures.
             </p>
             <Button variant="outline-primary">Learn More</Button>
           </Col>
@@ -114,8 +140,8 @@ function TvComponent() {
           <Col md={6} className="tv-grid-description">
             <h4>TV Setup Service</h4>
             <p>
-              Our TV setup service ensures that your new TV is installed and configured correctly,
-              including all your devices and settings.
+              Our TV setup service ensures that your new TV is installed and
+              configured correctly, including all your devices and settings.
             </p>
             <Button variant="outline-primary">Learn More</Button>
           </Col>
@@ -126,13 +152,13 @@ function TvComponent() {
 
         <Row className="tv-grid-item">
           <Col md={6} className="tv-grid-img-container">
-            <img src={tvone} alt="TV Calibration" className="tv-grid-img" />
+            <img src={tvsix} alt="TV Calibration" className="tv-grid-img" />
           </Col>
           <Col md={6} className="tv-grid-description">
             <h4>TV Calibration Service</h4>
             <p>
-              Optimize your TV’s color, brightness, contrast, and more with our expert calibration
-              service for the best viewing experience.
+              Optimize your TV’s color, brightness, contrast, and more with our
+              expert calibration service for the best viewing experience.
             </p>
             <Button variant="outline-primary">Learn More</Button>
           </Col>
@@ -141,8 +167,12 @@ function TvComponent() {
 
       {/* Modals for Book Now and Troubleshoot */}
       {showBookNowModal && <BookNowForm onClose={closeBookNowModal} />}
-      {showTroubleshootModal && <TroubleshootModal onClose={closeTroubleshootModal} />}
+      {showTroubleshootModal && (
+        <TroubleshootModal onClose={closeTroubleshootModal} />
+      )}
     </div>
+    <EnquiryModuleCommon/>
+    </>
   );
 }
 

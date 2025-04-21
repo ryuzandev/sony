@@ -5,6 +5,7 @@ import "../componentsCss/Refridgerater.css";
 // Import modals
 import BookNowForm from './AssestComponents/BookNowForm';
 import TroubleshootModal from './AssestComponents/TroubleshootModal';
+import EnquiryModuleCommon from './EnquiryModuleCommon';
 
 // Image sources
 import rone from "../componentsSrcAssets/rone.jpg";
@@ -28,6 +29,7 @@ function Refridgerater() {
   const closeTroubleshootModal = () => setShowTroubleshootModal(false);
 
   return (
+    <>
     <div className="fridge-container">
       {/* Carousel */}
       <Carousel>
@@ -37,8 +39,8 @@ function Refridgerater() {
             <div className="fridge-carousel-caption">
               <h3>Refrigerator Repair</h3>
               <div className="fridge-carousel-btn-container">
-                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-                <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+                {/* <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
               </div>
             </div>
           </div>
@@ -49,8 +51,8 @@ function Refridgerater() {
             <div className="fridge-carousel-caption">
               <h3>Refrigerator Installation</h3>
               <div className="fridge-carousel-btn-container">
-                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-                <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+                {/* <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
               </div>
             </div>
           </div>
@@ -61,8 +63,8 @@ function Refridgerater() {
             <div className="fridge-carousel-caption">
               <h3>Refrigerator Maintenance</h3>
               <div className="fridge-carousel-btn-container">
-                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Book Now</Button>
-                <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button>
+                <Button variant="primary" className="fridge-carousel-btn" onClick={handleBookNowClick}>Complaint-Specimen</Button>
+                {/* <Button variant="secondary" className="fridge-carousel-btn" onClick={handleTroubleshootClick}>Troubleshoot</Button> */}
               </div>
             </div>
           </div>
@@ -115,6 +117,8 @@ function Refridgerater() {
       {showBookNowModal && <BookNowForm onClose={closeBookNowModal} />}
       {showTroubleshootModal && <TroubleshootModal onClose={closeTroubleshootModal} />}
     </div>
+    <EnquiryModuleCommon/>
+    </>
   );
 }
 

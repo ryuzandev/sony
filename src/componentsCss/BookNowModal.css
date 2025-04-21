@@ -101,3 +101,47 @@
   margin-right: 10px;
   width: 20px;
 }
+
+/* new css */
+.booknow-modal-content {
+  position: relative; /* Make sure the modal content is positioned */
+}
+
+.booknow-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 1000;
+  color: red;
+}
+.finalButtons_submit {
+  width: 100%;
+  /* margin-right: 5%; */
+  /* margin-left: 5%; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.finalButtons_close {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: rgb(252, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px solid;
+}
+.finalButtons_close:hover {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: rgba(252, 0, 0, 0.786);
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px solid;
+}
