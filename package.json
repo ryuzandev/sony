@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ryuzandev.github.io/hypersonic",
-  "name": "panasonic",
+  "homepage": "https://ryuzandev.github.io/lg",
+  "name": "lg",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "file-loader": "^6.2.0",
     "fuse.js": "^7.1.0",
     "http-proxy-middleware": "^3.0.3",
+    "lg": "file:",
     "node": "^23.4.0",
     "one": "file:",
     "panasonic": "file:",
