@@ -51,7 +51,7 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Specimen
+                Complaint Form
               </button>
               {/* <button
                 className="skew-button troubleshoot"
@@ -83,7 +83,7 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Specimen
+                Complaint Form
               </button>
               {/* <button
                 className="skew-button troubleshoot"
@@ -116,7 +116,7 @@ function Carousal() {
                 className="skew-button book-now"
                 onClick={handleBookNowClick}
               >
-                Specimen
+                Complaint Form
               </button>
               {/* <button
                 className="skew-button troubleshoot"

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
-import '../componentsCss/Footer.css'; // Import your CSS file
+import React, { useState } from "react";
+import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import "../componentsCss/Footer.css"; // Import your CSS file
+import lgLogo from "../componentsSrcAssets/lglogo.png";
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,8 +17,9 @@ const Footer = () => {
     <footer className="footer">
       {/* Hypersonic Name in the middle */}
       <div className="footer-content">
-        <h1 className="footer-title">Hypersonic</h1>
-        
+        {/* <h1 className="footer-title">Hypersonic</h1> */}
+        <img src={lgLogo} alt="Hypersonic Logo" className="footer-logo" />
+
         {/* Form to collect Gmail */}
         <form onSubmit={handleSubmit} className="email-form">
           <input
@@ -28,18 +30,32 @@ const Footer = () => {
             required
             className="email-input"
           />
-          <button type="submit" className="email-button">Send</button>
+          <button type="submit" className="email-button">
+            Send
+          </button>
         </form>
-        
+
         {/* Social Media Icons */}
         <div className="social-icons">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram className="social-icon" />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebook className="social-icon" />
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter className="social-icon" />
           </a>
         </div>

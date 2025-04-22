@@ -22,6 +22,7 @@ function BookNowForm({ onClose }) {
     companyMake: "",
     customMake: "",
     city: "",
+    warranty:"",
   });
 
   // Mapping services to relevant company makes
@@ -313,6 +314,21 @@ function BookNowForm({ onClose }) {
                 <option value="">Select Status</option>
                 <option value="Under Amc">Under Amc</option>
                 <option value="Amc Expired">Amc Expired</option>
+                {/* <option value="Under Warranty">Under Warranty</option> */}
+                {/* <option value="Warranty Expired">Warranty Expired</option> */}
+              </select>
+            </label>
+            <label>
+              Warranty Status*:
+              <select
+                name="warranty"
+                value={formData.warranty}
+                onChange={handleInputChange}
+                required
+              >
+                <option value="">Select Status</option>
+                {/* <option value="Under Amc">Under Amc</option> */}
+                {/* <option value="Amc Expired">Amc Expired</option> */}
                 <option value="Under Warranty">Under Warranty</option>
                 <option value="Warranty Expired">Warranty Expired</option>
               </select>
@@ -349,7 +365,7 @@ function BookNowForm({ onClose }) {
               />
             </label>
             <label>
-              Comments:
+              What is the problem:
               <textarea
                 name="comments"
                 value={formData.comments}

@@ -67,7 +67,7 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo1}
             onMouseLeave={handleMouseLeaveVideo1}
           >
-            <iframe
+            {/* <iframe
               width="100%"
               height="100%"
               src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
@@ -77,7 +77,9 @@ function GridMultiService() {
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+
+            <iframe width="1307" height="735" src="https://www.youtube.com/embed/njX2bu-_Vw4" title="2020 LG OLED l  The Black 4K HDR 60fps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             {isPlayingVideo1 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>
@@ -165,7 +167,7 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo2}
             onMouseLeave={handleMouseLeaveVideo2}
           >
-            <iframe
+            {/* <iframe
               width="100%"
               height="100%"
               src={`https://www.youtube.com/embed/l07RGT3ucFs?autoplay=${
@@ -175,7 +177,8 @@ function GridMultiService() {
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+            <iframe width="1307" height="735" src="https://www.youtube.com/embed/Tcm1QAodEDE" title="New LG Washing Machine With AI Direct Drive™ | LG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             {isPlayingVideo2 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>
@@ -192,7 +195,7 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo1}
             onMouseLeave={handleMouseLeaveVideo1}
           >
-            <iframe
+            {/* <iframe
               width="100%"
               height="100%"
               src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
@@ -202,7 +205,8 @@ function GridMultiService() {
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+            <iframe width="1307" height="735" src="https://www.youtube.com/embed/eFW6iqF1siE" title="Embrace Ease-Of-Cooking With Scan To Cook | LG Microwave Oven | ThinQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             {isPlayingVideo1 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>

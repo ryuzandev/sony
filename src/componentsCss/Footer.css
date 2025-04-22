@@ -73,3 +73,18 @@
     }
   }
   
+  /* new css */
+  .footer-logo {
+    height: 200px; /* or any size you want */
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+
+
+

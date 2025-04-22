@@ -4,6 +4,7 @@ import { useState } from "react";
 // Importing Components
 import Offers from "./components/Offers";
 import Navbar from "./components/Navbar";
+import NavbarCommon from "./components/NavbarCommon";
 import Carousal from "./components/Carousal";
 import GridMultiService from "./components/GridMultiService";
 import Footer from "./components/Footer";
@@ -15,12 +16,13 @@ import MicroWave from "./components/MicroWave";
 import AirConditioner from "./components/AirConditioner";
 import { ProductData } from "./ProductData";
 import AllProducts from "./components/AllProducts";
-import Refridgerater from "./components/Refridgerater";
+import Refrigerator from "./components/Refrigerator";
 import Dishwasher from "./components/DishWasher";
+import Chatbot from "./components/AssestComponents/Chatbot";
+import ContactUsFloating from "./components/AssestComponents/ContactUsFloating";
 
 // Context Resource
 import { createContext } from "react";
-
 
 // Context Functionality
 export const AppContext = createContext();
@@ -85,46 +87,139 @@ function App() {
     <AppContext.Provider value={{ book, trouble, setBook, settrouble }}>
       <Router>
         <Offers />
-        <Navbar /> {/* Navbar is always visible */}
+        {/* <Navbar /> */}
+        {/* Navbar is always visible */}
         <Routes>
           {/* Home Page - These components will be visible on the homepage */}
           <Route
             path="hypersonic/"
             element={
               <>
+                <NavbarCommon />
                 <Carousal />
                 <GridMultiService />
+                <Chatbot />
+                <ContactUsFloating/>
               </>
             }
           />
 
           {/* BookNow Page */}
-          <Route path="/book-now" element={<BookNowCards />} />
+          <Route
+            path="/book-now"
+            element={
+              <>
+                <Navbar />
+                <BookNowCards />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Troubleshoot Page */}
-          <Route path="/troubleshoot" element={<TroubleshootCards />} />
+          <Route
+            path="/troubleshoot"
+            element={
+              <>
+                <Navbar />
+                <TroubleshootCards />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/tv" element={<TvComponent />} />
+          <Route
+            path="/tv"
+            element={
+              <>
+                <Navbar />
+                <TvComponent />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/washing" element={<WashingMachine />} />
+          <Route
+            path="/washing"
+            element={
+              <>
+                <Navbar />
+                <WashingMachine />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/microwave" element={<MicroWave />} />
+          <Route
+            path="/microwave"
+            element={
+              <>
+                <Navbar />
+                <MicroWave />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/Refridgerater" element={<Refridgerater />} />
+          <Route
+            path="/Refrigerator"
+            element={
+              <>
+                <Navbar />
+                <Refrigerator />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/DishWasher" element={<Dishwasher />} />
+          <Route
+            path="/DishWasher"
+            element={
+              <>
+                <Navbar />
+                <Dishwasher />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
           {/* Tvcomponent Page */}
-          <Route path="/aircondition" element={<AirConditioner />} />
+          <Route
+            path="/aircondition"
+            element={
+              <>
+                <Navbar />
+                <AirConditioner />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
 
-           {/* All products Page */}
-           <Route path="/products" element={<AllProducts/>} />
-
+          {/* All products Page */}
+          <Route
+            path="/products"
+            element={
+              <>
+                <Navbar />
+                <AllProducts />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </Router>
