@@ -67,7 +67,7 @@ function NavbarCommon() {
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to="/hypersonic"
+          to="/lg"
           className="d-flex align-items-center"
         >
           <img
