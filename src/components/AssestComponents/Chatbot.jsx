@@ -76,6 +76,51 @@ const Chatbot = () => {
           route: "/DishWasher",
         },
       ]);
+    } else if (userMsg.includes("music")) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          from: "bot",
+          text: "Please visit the music stereo page.",
+          route: "/musicstereo",
+        },
+      ]);
+    } else if (userMsg.includes("music stereo")) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          from: "bot",
+          text: "Please visit the music stereo page.",
+          route: "/musicstereo",
+        },
+      ]);
+    } else if (userMsg.includes("playstation")) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          from: "bot",
+          text: "Please visit the playstation page.",
+          route: "/playstation",
+        },
+      ]);
+    } else if (userMsg.includes("playstation")) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          from: "bot",
+          text: "Please visit the playstation page.",
+          route: "/playstation",
+        },
+      ]);
+    } else if (userMsg.includes("play")) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          from: "bot",
+          text: "Please visit the playstation page.",
+          route: "/playstation",
+        },
+      ]);
     } else if (userMsg.includes("yes")) {
       const lastBotMsg = messages.filter((m) => m.from === "bot").slice(-1)[0];
       if (lastBotMsg?.route) {
@@ -99,7 +144,10 @@ const Chatbot = () => {
   return (
     <div className="chatbot-container">
       <div className="chatbot-icon" onClick={handleToggle}>
-        <span><b>AI BOT  </b></span><BsChatDotsFill size={35} />
+        <span>
+          <b>AI BOT </b>
+        </span>
+        <BsChatDotsFill size={35} />
       </div>
 
       {open && (

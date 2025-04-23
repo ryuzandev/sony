@@ -18,6 +18,8 @@ import { ProductData } from "./ProductData";
 import AllProducts from "./components/AllProducts";
 import Refrigerator from "./components/Refrigerator";
 import Dishwasher from "./components/DishWasher";
+import MusicStereo from "./components/MusicStereo";
+import PlayStation from "./components/PlayStation";
 import Chatbot from "./components/AssestComponents/Chatbot";
 import ContactUsFloating from "./components/AssestComponents/ContactUsFloating";
 
@@ -92,7 +94,7 @@ function App() {
         <Routes>
           {/* Home Page - These components will be visible on the homepage */}
           <Route
-            path="lg/"
+            path="sony/"
             element={
               <>
                 <NavbarCommon />
@@ -202,6 +204,28 @@ function App() {
               <>
                 <Navbar />
                 <AirConditioner />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
+             <Route
+            path="/musicstereo"
+            element={
+              <>
+                <Navbar />
+                <MusicStereo />
+                <Chatbot />
+                <ContactUsFloating/>
+              </>
+            }
+          />
+          <Route
+            path="/playstation"
+            element={
+              <>
+                <Navbar />
+                <PlayStation />
                 <Chatbot />
                 <ContactUsFloating/>
               </>

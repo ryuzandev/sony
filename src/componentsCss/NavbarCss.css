@@ -35,6 +35,8 @@
 .search-button {
   border-color: #ffc107; /* Border matching highlight color */
   color: #ffc107; /* Button text */
+  margin-left: 10px;
+  width: 200px;
 }
 
 .search-button:hover {

@@ -2,7 +2,7 @@
 .offers-section {
     width: 100%; /* Full width of the screen */
     height: 5vh; /* 50% of the viewport height */
-    background-color: #ffffff; /* White background */
+    background-color: #000000; /* White background */
     color: #333; /* Dark text for contrast */
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     font-size: 1.5rem; /* Responsive font size */
     font-weight: bold;
     /* padding:2px; */
-    color: #007bff; /* Bootstrap primary color */
+    color: #ffffff; /* Bootstrap primary color */
     animation: scroll-text 15s linear infinite;
   }
   

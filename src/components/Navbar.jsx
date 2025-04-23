@@ -124,7 +124,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../componentsCss/NavbarCss.css";
-import lgLogo from "../componentsSrcAssets/lglogo.png";
+import sony from "../componentsSrcAssets/sony.png";
 
 function Navbar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -145,6 +145,11 @@ function Navbar() {
     { name: "Refrigerator Service", path: "/refridgerater" },
     { name: "Dish Washer", path: "/DishWasher" },
     { name: "Dish Washer Service", path: "/DishWasher" },
+    { name: "Music", path: "/musicstereo" },
+    { name: "Music Stereo", path: "/musicstereo" },
+    { name: "Gaming", path: "/playstation" },
+    { name: "playstation", path: "/playstation" },
+    { name: "play station", path: "/playstation" },
   ];
 
   const fuse = new Fuse(searchableRoutes, {
@@ -173,20 +178,20 @@ function Navbar() {
   };
 
   return (
-    <NavbarComponent expand="xxl" className="navbar-dark-theme">
+    <NavbarComponent expand="xxl" className="navbar-light-theme">
       <Container fluid>
         {/* <NavbarComponent.Brand as={Link} to="/" className="text-white">
           HYPERSONIC
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to="/lg"
+          to="/sony"
           className="d-flex align-items-center"
         >
           <img
-            src={lgLogo}
+            src={sony}
             alt="Hypersonic Logo"
-            style={{ height: "50px", width: "auto" }} // adjust size if needed
+            style={{ height: "70px", width: "auto" }} // adjust size if needed
           />
         </NavbarComponent.Brand>
 
@@ -197,25 +202,26 @@ function Navbar() {
             {/* <Nav.Link as={Link} to="/hypersonic" className="text-white">
               Home
             </Nav.Link> */}
-            <Nav.Link as={Link} to="/tv" className="text-white">
+            <Nav.Link as={Link} to="/tv" className="text-black">
               Television
             </Nav.Link>
-            <Nav.Link as={Link} to="/washing" className="text-white">
+            {/* <Nav.Link as={Link} to="/washing" className="text-black">
               Washing-Machine
-            </Nav.Link>
-            <Nav.Link as={Link} to="/microwave" className="text-white">
+            </Nav.Link> */}
+            {/* <Nav.Link as={Link} to="/microwave" className="text-black">
               Microwave
-            </Nav.Link>
-            <Nav.Link as={Link} to="/aircondition" className="text-white">
+            </Nav.Link> */}
+            {/* <Nav.Link as={Link} to="/aircondition" className="text-black">
               Air-Conditioner
+            </Nav.Link> */}
+            <Nav.Link as={Link} to="/musicstereo" className="text-black">
+              {/* Refrigerator */}
+              Music Stereo
             </Nav.Link>
-            <Nav.Link as={Link} to="/Refrigerator" className="text-white">
-              Refrigerator
+            <Nav.Link as={Link} to="/playstation" className="text-black">
+              Play Station
             </Nav.Link>
-            <Nav.Link as={Link} to="/DishWasher" className="text-white">
-              Dish-Washer
-            </Nav.Link>
-            <Nav.Link as={Link} to="/book-now" className="text-white">
+            <Nav.Link as={Link} to="/book-now" className="text-black">
               Specimen
             </Nav.Link>
             {/* <Nav.Link as={Link} to="/troubleshoot" className="text-white">
@@ -237,7 +243,8 @@ function Navbar() {
               autoComplete="off"
             />
             <Button
-              variant="outline-light"
+              // variant="outline-light"
+              variant="primary"
               className="search-button"
               type="submit"
             >

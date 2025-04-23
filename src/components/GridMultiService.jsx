@@ -5,6 +5,11 @@ import Col from "react-bootstrap/Col";
 import "../componentsCss/GridMultiService.css"; // Import the custom CSS file
 import { Link } from "react-router-dom";
 
+// image sources
+import dfour from "../componentsSrcAssets/psfour.jpg";
+import tvfour from "../componentsSrcAssets/televisionseven.jpg";
+import rfive from "../componentsSrcAssets/speakerfive.jpg";
+
 function GridMultiService() {
   const [isPlayingVideo1, setIsPlayingVideo1] = useState(false); // State to control video 1 play status
   const [isPlayingVideo2, setIsPlayingVideo2] = useState(false); // State to control video 2 play status
@@ -67,19 +72,16 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo1}
             onMouseLeave={handleMouseLeaveVideo1}
           >
-            {/* <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
-                isPlayingVideo1 ? "1" : "0"
-              }`}
-              title="YouTube video 1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
-
-            <iframe width="1307" height="735" src="https://www.youtube.com/embed/njX2bu-_Vw4" title="2020 LG OLED l  The Black 4K HDR 60fps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe
+              width="1307"
+              height="735"
+              src="https://www.youtube.com/embed/Hme5BhT52_U"
+              title="Introducing the PS4 Pro"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             {isPlayingVideo1 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>
@@ -90,20 +92,19 @@ function GridMultiService() {
           <div className="service-container">
             <div className="service-card">
               <img
-                src="https://c0.wallpaperflare.com/preview/800/984/997/grayscale-photo-of-washing-machine.jpg" // Placeholder image for Washing Machine
+                src={dfour} // Placeholder image for Washing Machine
                 alt="Washing Machine"
                 className="service-image"
               />
-              <h5>Washing Machine</h5>
+              <h5>Playstation</h5>
               <p>
-                We offer expert services for all types of washing machines,
-                ensuring efficiency and durability.
+              "Level up your gaming experience. Where every play feels like a win. #PlayStation #GameOn"
               </p>
               <Link to="/washing">
                 <button className="service-button">Find More</button>
               </Link>
             </div>
-            <div className="service-card">
+            {/* <div className="service-card">
               <img
                 src="https://c1.wallpaperflare.com/preview/258/187/760/wall-fan-air-conditioning-box.jpg" // Placeholder image for AC
                 alt="Air Conditioner"
@@ -117,7 +118,7 @@ function GridMultiService() {
               <Link to="/aircondition">
                 <button className="service-button">Find More</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </Col>
       </Row>
@@ -129,7 +130,7 @@ function GridMultiService() {
           <div className="service-container">
             <div className="service-card">
               <img
-                src="https://c4.wallpaperflare.com/wallpaper/636/997/126/lg-ultrawide-dream-canvas-smart-tv-hd-wallpaper-preview.jpg" // Placeholder image for TV
+                src={tvfour} // Placeholder image for TV
                 alt="TV"
                 className="service-image"
               />
@@ -142,7 +143,7 @@ function GridMultiService() {
                 <button className="service-button">Find More</button>
               </Link>
             </div>
-            <div className="service-card">
+            {/* <div className="service-card">
               <img
                 src="https://imgs.search.brave.com/an9uExyqHIEqWxKoPWb5walA8KC3_pw5QY5RICtXLeM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEz/NDQ2NTE3OS9waG90/by93b21hbi1hdC1o/b21lLWhlYXRpbmct/Zm9vZC1hdC1taWNy/b3dhdmUtb3Zlbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bEdyZFFCWnlwTUlG/UW1TSW4xcVp1Zlpk/N01SazhRSjc1RVJv/VHJWRHU2Zz0" // Placeholder image for Microwave Oven
                 alt="Microwave Oven"
@@ -156,7 +157,7 @@ function GridMultiService() {
               <Link to="/microwave">
                 <button className="service-button">Find More</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </Col>
 
@@ -167,18 +168,16 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo2}
             onMouseLeave={handleMouseLeaveVideo2}
           >
-            {/* <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/l07RGT3ucFs?autoplay=${
-                isPlayingVideo2 ? "1" : "0"
-              }`}
-              title="YouTube video 2"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
-            <iframe width="1307" height="735" src="https://www.youtube.com/embed/Tcm1QAodEDE" title="New LG Washing Machine With AI Direct Drive™ | LG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe
+              width="1307"
+              height="735"
+              src="https://www.youtube.com/embed/Eplrmw9RY_k"
+              title="Sony BRAVIA 4K TVC - Experience Perfection"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             {isPlayingVideo2 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>
@@ -195,18 +194,16 @@ function GridMultiService() {
             onMouseEnter={handleMouseEnterVideo1}
             onMouseLeave={handleMouseLeaveVideo1}
           >
-            {/* <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
-                isPlayingVideo1 ? "1" : "0"
-              }`}
-              title="YouTube video 1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
-            <iframe width="1307" height="735" src="https://www.youtube.com/embed/eFW6iqF1siE" title="Embrace Ease-Of-Cooking With Scan To Cook | LG Microwave Oven | ThinQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe
+              width="1307"
+              height="735"
+              src="https://www.youtube.com/embed/i5pVHiKUMpo"
+              title="Virtual Surround Sound Demo for the HT-A5000 and HT-A7000 Soundbar | Sony"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
             {isPlayingVideo1 && <div className="overlay"></div>}{" "}
             {/* Show overlay when video is playing */}
           </div>
@@ -217,20 +214,19 @@ function GridMultiService() {
           <div className="service-container">
             <div className="service-card">
               <img
-                src="https://images.pexels.com/photos/3829549/pexels-photo-3829549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" // Placeholder image for Washing Machine
+                src={rfive} // Placeholder image for Washing Machine
                 alt="Washing Machine"
                 className="service-image"
               />
-              <h5>DishWasher</h5>
+              <h5>Music Stereo</h5>
               <p>
-                We offer expert services for all types of DishWasher, ensuring
-                efficiency and durability.
+              "Feel every beat. Hear the difference. 🎶 #SonyMusicStereo #PureSound"
               </p>
               <Link to="/DishWasher">
                 <button className="service-button">Find More</button>
               </Link>
             </div>
-            <div className="service-card">
+            {/* <div className="service-card">
               <img
                 src="https://images.pexels.com/photos/2343467/pexels-photo-2343467.jpeg?auto=compress&cs=tinysrgb&w=600" // Placeholder image for AC
                 alt="Air Conditioner"
@@ -244,7 +240,7 @@ function GridMultiService() {
               <Link to="/Refridgerater">
                 <button className="service-button">Find More</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </Col>
       </Row>

@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../componentsCss/NavbarCss.css";
-import lgLogo from "../componentsSrcAssets/lglogo.png";
+import sony from "../componentsSrcAssets/sony.png";
 
 function NavbarCommon() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,6 +32,11 @@ function NavbarCommon() {
     { name: "Refrigerator Service", path: "/refridgerater" },
     { name: "Dish Washer", path: "/DishWasher" },
     { name: "Dish Washer Service", path: "/DishWasher" },
+    { name: "Music", path: "/musicstereo" },
+    { name: "Music Stereo", path: "/musicstereo" },
+    { name: "Gaming", path: "/playstation" },
+    { name: "playstation", path: "/playstation" },
+    { name: "play station", path: "/playstation" },
   ];
 
   const fuse = new Fuse(searchableRoutes, {
@@ -60,18 +65,18 @@ function NavbarCommon() {
   };
 
   return (
-    <NavbarComponent expand="xxl" className="navbar-dark-theme">
+    <NavbarComponent expand="xxl" className="navbar-light-theme">
       <Container fluid>
         {/* <NavbarComponent.Brand as={Link} to="/" className="text-white">
           HYPERSONIC
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to="/lg"
+          to="/sony"
           className="d-flex align-items-center"
         >
           <img
-            src={lgLogo}
+            src={sony}
             alt="Hypersonic Logo"
             style={{ height: "60px", width: "auto" }} // adjust size if needed
           />
@@ -124,7 +129,7 @@ function NavbarCommon() {
               autoComplete="off"
             />
             <Button
-              variant="outline-light"
+              variant="primary"
               className="search-button"
               type="submit"
             >
