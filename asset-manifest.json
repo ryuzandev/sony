@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sony/static/css/main.b296a97f.css",
-    "main.js": "/sony/static/js/main.6483cd81.js",
+    "main.js": "/sony/static/js/main.5bac4f5a.js",
     "static/media/dthree.jpg": "/sony/static/media/dthree.7cac2ee2791e5325cec0.jpg",
     "static/media/psfour.jpg": "/sony/static/media/psfour.c8fcc7e7a97a94f6d150.jpg",
     "static/media/televisionseven.jpg": "/sony/static/media/televisionseven.4e9f4eca01cacba9c5b3.jpg",
@@ -56,10 +56,10 @@
     "static/media/mfour.jpg": "/sony/static/media/mfour.437677bf193d0eb95a90.jpg",
     "index.html": "/sony/index.html",
     "main.b296a97f.css.map": "/sony/static/css/main.b296a97f.css.map",
-    "main.6483cd81.js.map": "/sony/static/js/main.6483cd81.js.map"
+    "main.5bac4f5a.js.map": "/sony/static/js/main.5bac4f5a.js.map"
   },
   "entrypoints": [
     "static/css/main.b296a97f.css",
-    "static/js/main.6483cd81.js"
+    "static/js/main.5bac4f5a.js"
   ]
 }
