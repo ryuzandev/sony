@@ -98,9 +98,10 @@ function GridMultiService() {
               />
               <h5>Playstation</h5>
               <p>
-              "Level up your gaming experience. Where every play feels like a win. #PlayStation #GameOn"
+                "Level up your gaming experience. Where every play feels like a
+                win. #PlayStation #GameOn"
               </p>
-              <Link to="/washing">
+              <Link to="/playstation">
                 <button className="service-button">Find More</button>
               </Link>
             </div>
@@ -220,9 +221,10 @@ function GridMultiService() {
               />
               <h5>Music Stereo</h5>
               <p>
-              "Feel every beat. Hear the difference. 🎶 #SonyMusicStereo #PureSound"
+                "Feel every beat. Hear the difference. 🎶 #SonyMusicStereo
+                #PureSound"
               </p>
-              <Link to="/DishWasher">
+              <Link to="/musicstereo">
                 <button className="service-button">Find More</button>
               </Link>
             </div>
