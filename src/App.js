@@ -94,7 +94,7 @@ function App() {
         <Routes>
           {/* Home Page - These components will be visible on the homepage */}
           <Route
-            path="sony/"
+            path="sonysample/"
             element={
               <>
                 <NavbarCommon />

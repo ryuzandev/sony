@@ -185,7 +185,7 @@ function Navbar() {
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to="/sony"
+          to="/sonysample"
           className="d-flex align-items-center"
         >
           <img

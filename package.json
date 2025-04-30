@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ryuzandev.github.io/sony",
-  "name": "sony",
+  "homepage": "https://ryuzandev.github.io/sonysample",
+  "name": "sonysample",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
